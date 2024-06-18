@@ -160,6 +160,7 @@ return [
             'changeUserinfo' => [
                 'actions_name'      => '变更信息',
                 'template_id'  => 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+                'sender'  =>  '106940000000000000000',//不同的道号
             ],
         ],
     ]
