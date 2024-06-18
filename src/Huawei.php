@@ -29,7 +29,7 @@ class Huawei
             try {
                 $response = $client->request('POST', $this->config['url'].'/sms/batchSendSms/v1', [
                     'form_params' => [
-                        'from' => $this->config['sender'],
+                        'from' => $conf['sender']??$this->config['sender'],
                         'to' => $mobile,
                         'templateId' => $conf['template_id'],
                         'templateParas' => $params,
